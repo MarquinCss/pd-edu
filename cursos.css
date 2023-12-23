@@ -126,25 +126,6 @@ body {
     flex-direction: row;
 }
 
-.close {
-    color: #aaa;
-    background-color: #006D9D !important;
-    z-index: 999;
-    border:#006D9D;
-    border-radius: 50px;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 input {
     padding: 8px;
     font-size: 16px;
