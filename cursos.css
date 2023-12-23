@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
+/*ACESSO JOVEM*/
+body{
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+
+h2{
+    font-family: 'Asap Condensed', sans-serif;
+    margin-bottom: 40px;
+ font-size: 45px !important;
+ background-image: linear-gradient(to bottom, #0F506D,#2A6E90, #006D9D);
+ background-clip: text;
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent;
+ color: black;
+ font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+
+figure {
+    position: relative;
+    overflow: hidden;
+}
+
+
+figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity .5s;
+    transition: filter 500ms; 
+}
+.curso-img{
+
+    transition: filter 500ms !important; 
+}
+figure img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    display: block;
+    transition: filter .6s !important; /* Ajuste o valor para controlar a velocidade da transição do efeito de desfoque */
+}
+
+
+
+
+figure:hover .curso-img {
+    filter: blur(8px); /* Adicionando o efeito de desfoque na imagem quando o figure está em foco */
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+figure:hover figcaption + .curso-img {
+    filter: blur(8px); /* Desfocar a imagem quando o figcaption está em foco */
+}
+
+.cursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:40px
+}
+
+
+.cursos img{
+    min-width: 300px;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+/*Modal é geral*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2; /* Ajustado para um valor maior */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width:500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+
+}
+
+
+.modal-btn{
+    display: flex;
+    flex-direction: row;
+}
+
+.close {
+    color: #aaa;
+    background-color: #006D9D !important;
+    z-index: 999;
+    border:#006D9D;
+    border-radius: 50px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-content {
+    transition: filter 0.5s ease; /* Adicionando transição para suavizar o efeito de desfoque */
+    display: flex;
+}
+
+.main-content.blurred {
+    filter: blur(5px); 
+    pointer-events: none; 
+}
+
+
+.acoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap:25px;
+    margin-right:100px;
+}
+
+
+
+.informa{
+margin-right:250px;
+margin-top:100px;
+text-align: left;
+}
+
+.div-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:150px;
+}
+
+
+.informa h2{
+    font-family: 'Asap Condensed', sans-serif;
+ font-size: 55px !important;
+ background-image: linear-gradient(to bottom, #0F506D,#2A6E90, #006D9D);
+ background-clip: text;
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent;
+ color: black;
+ font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.1;
+  max-width: 670px;
+}
+.infoma .hatres{
+    font-family: 'Asap Condensed', sans-serif;
+ font-size: 33px !important;
+ background-image: linear-gradient(to bottom, #0F506D,#2A6E90, #006D9D);
+ background-clip: text;
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent;
+ color: black;
+ font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.1;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 850px) {
+    .container-acesso-jovem{
+        flex-direction: column;
+    }
+    .container-acesso-jovem{
+        gap: 50px;
+    }
+    
+.main-content {
+    transition: filter 0.5s ease; /* Adicionando transição para suavizar o efeito de desfoque */
+    display: flex;
+    flex-direction: column;
+}
+
+h2,h3{
+    font-size:30px;
+    text-align: center;
+}
+
+
+.informa{
+    margin-right:0px;
+margin-top:100px;
+}
+
+
+.acoes{
+    display: flex;
+padding: 25px;
+
+    margin-LEFT: 0;
+    margin-right: 0;
+    
+}
+}
+
+
