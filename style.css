@@ -46,7 +46,16 @@ body{
 }
 
 .card h3 {
-    color: #fff;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 23px ;
+  background-image: linear-gradient(to bottom, #3292bb,#ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+   font-weight: bold;
+   line-height: 1.1;
 }
 
 figcaption {
