@@ -34,9 +34,26 @@ body{
 }
 
 #tit{
-    font-weight: 600;
+    font-weight: 500;
+    color: #00e5e9;
 }
 
+#mais{
+    background:linear-gradient(to right, #36d0ff 5%, #53fcff 10%, #16e7eb 50%, #00fbff 90%) ;
+background-size: 200% auto;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: animate2 1.5s linear infinite;
+}
+@keyframes animate2{
+    to{
+        background-position:200%;
+        
+    }
+    }
+    
+    
 
 .consientizacao-titulo {
     font-size: 30px;
