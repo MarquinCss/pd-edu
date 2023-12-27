@@ -30,9 +30,12 @@ figcaption {
     position: absolute;
     top: 50%;
     left: 50%;
+    font-size: 20px;
+    font-family:'Asap Condensed', sans-serif;
     text-align: center;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    border-radius: 25px;
+    background-color:#006D9D;
     color: white;
     padding: 10px;
     opacity: 0;
@@ -67,18 +70,18 @@ figure:hover figcaption + .curso-img {
 }
 
 .cursos{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:40px
+    gap:35px
 }
 
 
 .cursos img{
-    min-width: 300px;
-    max-width: 300px;
+   width: 300px;
     height: 300px;
     object-fit: cover;
 }

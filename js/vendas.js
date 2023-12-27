@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var codigoInput = document.getElementById("codigoInput");
+
+  // Adiciona um ouvinte de evento de teclado ao campo de entrada
+  codigoInput.addEventListener("keyup", function (event) {
+      // Verifica se a tecla pressionada é Enter (código 13)
+      if (event.keyCode === 13) {
+          // Chama a função verificarCodigo() se a tecla Enter foi pressionada
+          verificarCodigo();
+      }
+  });
+});
 var codigoCorreto = "3241";
 var paragrafoErro = document.querySelector("#erro");
 var modal = document.getElementById("modal");

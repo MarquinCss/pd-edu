@@ -30,7 +30,11 @@ body{
 .container-acesso-jovem{
     display: flex;
     flex-direction:row;
-    gap:26px;
+    gap:30px;
+}
+
+#tit{
+    font-weight: 500;
 }
 
 
