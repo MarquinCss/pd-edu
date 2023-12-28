@@ -9,7 +9,33 @@ document.addEventListener("DOMContentLoaded", function () {
           verificarCodigo();
       }
   });
+
+  var modal = document.getElementById("modal");
+
+  // Adicione o atributo tabindex ao modal para permitir a navegação por teclado
+  modal.setAttribute("tabindex", "0");
+
+  // Mantenha um estado para rastrear se o código foi inserido corretamente
+  var codigoInseridoCorretamente = false;
+
+  // Desative a navegação inicial para os elementos fora do modal
+  desativarNavegacaoExterna();
+
+  // Adicione um ouvinte de evento para tratar a tecla Enter dentro do modal
+  modal.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+      // Trate a tecla Enter dentro do modal conforme necessário
+      // Exemplo: fechar o modal se o código foi inserido corretamente
+      if (codigoInseridoCorretamente) {
+        fecharModal();
+      }
+    }
+  });
+
+  // Exibir o modal ao carregar a página (você pode chamar essa função quando necessário)
+  exibirModal();
 });
+
 var codigoCorreto = "1111";
 var paragrafoErro = document.querySelector("#erro");
 var modal = document.getElementById("modal");
@@ -20,6 +46,10 @@ function exibirModal() {
 
 function fecharModal() {
   modal.style.display = "none";
+  // Remova o atributo tabindex quando o modal for fechado
+  modal.removeAttribute("tabindex");
+  // Ative a navegação para elementos fora do modal
+  ativarNavegacaoExterna();
 }
 
 function verificarCodigo() {
@@ -29,6 +59,8 @@ function verificarCodigo() {
   if (codigoDigitado === codigoCorreto) {
     paragrafoErro.innerHTML = "";
     fecharModal();
+    // Atualize o estado indicando que o código foi inserido corretamente
+    codigoInseridoCorretamente = true;
   } else {
     paragrafoErro.innerHTML = "Erro, tente novamente, jovem!";
     codigoInput.value = "";
@@ -40,5 +72,18 @@ function verificarCodigo() {
   }
 }
 
-// Exibir o modal ao carregar a página (você pode chamar essa função quando necessário)
-window.onload = exibirModal;
+function desativarNavegacaoExterna() {
+  // Desative a navegação para os elementos fora do modal
+  var elementosExternos = document.querySelectorAll("a, img");
+  elementosExternos.forEach(function (elemento) {
+    elemento.setAttribute("tabindex", "-1");
+  });
+}
+
+function ativarNavegacaoExterna() {
+  // Ative a navegação para os elementos fora do modal
+  var elementosExternos = document.querySelectorAll("a, img");
+  elementosExternos.forEach(function (elemento) {
+    elemento.removeAttribute("tabindex");
+  });
+}
