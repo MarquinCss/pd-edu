@@ -38,6 +38,17 @@ body{
     color: #00e5e9;
 }
 
+.escondido{
+      text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        color: transparent;
+        display: block;
+        position: absolute;
+       }
+
+
+
 #mais{
     background:linear-gradient(to right, #36d0ff 5%, #53fcff 10%, #16e7eb 50%, #00fbff 90%) ;
 background-size: 200% auto;
