@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+} 
  @import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
 /*ACESSO JOVEM*/
 body{
@@ -5,7 +9,7 @@ body{
 }
 
 .area-jovem{
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,6 +124,62 @@ figcaption {
 .card a {
     color: var(--text1);
 }
+
+/*ESG CONTENT - PAGE PRINCIPAL*/
+
+.esg-section{
+height: 80vh;
+background-color: #cdfff8;
+}
+
+
+.esg-section h2{
+    font-family: 'Asap Condensed', sans-serif;
+    margin-bottom: 40px;
+ font-size: 45px !important;
+ background-image: linear-gradient(to bottom, #025008,#0a665a, #03853d);
+ background-clip: text;
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent;
+ color: black;
+ font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.esg-cnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+gap:2rem;
+
+}
+
+.texto-tit-btn-esg{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap:0.2rem;
+    padding: 20px;
+}
+
+.texto-tit-btn-esg p{
+  text-align: left;
+  font-size: 24px;
+
+}
+
+.esg-cnt img{
+    max-width: 500px;
+    padding: 3.5rem; /*no responsivo colocar 60px de padding*/
+    height: 500px;
+    object-fit: cover;
+
+}
+
 
 @media screen and (max-width: 850px) {
     .container-acesso-jovem{
