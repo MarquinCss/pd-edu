@@ -1,0 +1,101 @@
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* line 2, ../scss/media.scss */
+    .big-ball:after {
+      height: 280px;
+    }
+  
+    /* line 5, ../scss/media.scss */
+    #feedback-boleto {
+      padding: 90px 40px;
+    }
+  
+    /* line 8, ../scss/media.scss */
+    #form-boleto {
+      padding: 30px 20px;
+    }
+  
+    /* line 11, ../scss/media.scss */
+    #qa-financeiro-body {
+      overflow: hidden;
+    }
+  
+    /* line 14, ../scss/media.scss */
+    #sp-empresa .sec-line {
+      left: 32px;
+    }
+  }
+  @media only screen and (min-width: 425px) and (max-width: 991px) {
+    /* line 34, ../scss/media.scss */
+    #qa-financeiro-body .gray-ball-r {
+      margin-left: -20px;
+    }
+    /* line 37, ../scss/media.scss */
+    #qa-financeiro-body .gray-ball-l {
+      margin-left: 0px;
+    }
+  
+    /* line 41, ../scss/media.scss */
+    .section {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  
+    /* line 45, ../scss/media.scss */
+    #bens-body {
+      padding: 40px 10px;
+    }
+  
+    /* line 48, ../scss/media.scss */
+    #navbar-search {
+      width: 238px;
+    }
+  
+    /* line 52, ../scss/media.scss */
+    #tl1 #next, #tl1 #prev {
+      right: -10px;
+    }
+    /* line 55, ../scss/media.scss */
+    #tl1 #dates {
+      margin-right: 3%;
+    }
+    /* line 58, ../scss/media.scss */
+    #tl1 .tl-box {
+      max-width: 450px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    /* line 66, ../scss/media.scss */
+    #tl1 .tl-box {
+      max-width: 720px;
+    }
+  
+    /* line 70, ../scss/media.scss */
+    .style-footer {
+      font-size: 16px;
+    }
+  
+    /* line 73, ../scss/media.scss */
+    #sp-empresa .col-offset-c1 {
+      margin-left: 13.4%;
+    }
+  
+    /* line 76, ../scss/media.scss */
+    #blog .margin-correction a img {
+      margin: 0;
+    }
+  
+    /* line 79, ../scss/media.scss */
+    .cards h4 {
+      font-size: 19px	!important;
+    }
+  }
+  @media only screen and (min-width: 993px) and (max-width: 1366px) and (min-height: 622px) and (max-height: 768px) {
+    /* line 86, ../scss/media.scss */
+    .video-js {
+      width: 820px;
+      height: 460px;
+    }
+  }
+  
+  /*# sourceMappingURL=media.css.map */
+  
