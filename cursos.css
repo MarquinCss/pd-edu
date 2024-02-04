@@ -6,9 +6,8 @@ html{
 }
 
 
-/*ACESSO JOVEM*/
 body{
-    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Asap Condensed', sans-serif !important;
 }
 
 
@@ -49,11 +48,11 @@ figcaption {
     color: white;
     padding: 10px;
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity .9s !important;
     transition: filter 500ms; 
 }
 .curso-img{
-
+  transition:.6s !important;
     transition: filter 500ms !important; 
 }
 figure img {
@@ -61,7 +60,7 @@ figure img {
     height: 100%;
     width: 100%;
     display: block;
-    transition: filter .6s !important; /* Ajuste o valor para controlar a velocidade da transição do efeito de desfoque */
+    transition:.6s !important; /* Ajuste o valor para controlar a velocidade da transição do efeito de desfoque */
 }
 
 
@@ -86,7 +85,6 @@ figure:hover figcaption + .curso-img {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:35px
 }
 
 
@@ -97,10 +95,50 @@ figure:hover figcaption + .curso-img {
 }
 
 
+.cursos a{
+  margin: 0 auto;
+  padding:20px;
+}
+
+
+
+
+
+
+/*PARA A PÁGINA DE SELEÇÃO DE PROFESSORES*/
+.selection{
+  display: flex;
+  flex-direction: column;
+  gap:19px;
+  font-family:'Asap Condensed', sans-serif !important;
+  
+}
+
+.selection label{
+  text-align: center;
+  padding:5px;
+}
+
+.selection select {
+padding: 15px;
+}
+
+
+.selection button{
+  padding:13px;
+  background-color: #006D9D;
+  color: #ffff;
+  font-weight: 800px;
+
+}
+
+
+
+
 
 /*Modal é geral*/
 body {
-    font-family: Arial, sans-serif;
+   font-family: Asap;
     margin: 0;
 }
 
@@ -121,7 +159,7 @@ body {
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 20px;
+    padding: 15px;
     border: 1px solid #888;
     width:500px;
     height: 340px;
@@ -184,6 +222,7 @@ button {
     display: block;
     position: absolute;
    }
+ 
 
 .acoes{
     display: flex;
@@ -339,6 +378,12 @@ min-width: 500px !important;
     .container-acesso-jovem{
         flex-direction: column;
     }
+
+    .cursos a{
+    padding-top: 20px !important;
+    padding: 0;
+    }
+    
     .container-acesso-jovem{
         gap: 50px;
     }
@@ -357,10 +402,18 @@ h2,h3{
 
 
 .informa h2{
-    margin: 0 auto;
-    font-size: 30px !important;
-    max-width: 300px;
+  text-align: center;
+  margin-left:5em;
+    font-size: 50px;
 }
+
+.informa{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
 
 
 .acoes{
