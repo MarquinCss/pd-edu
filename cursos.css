@@ -425,7 +425,7 @@ flex-wrap: wrap;
     
 }
 video{
-  width: 400px;
+  max-width: 600px !important;
   height: 300px;
 }
 }
